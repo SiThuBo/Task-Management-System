@@ -62,12 +62,18 @@ group :development do
   # gem "spring"
 
   gem "letter_opener"
+
+  gem 'rspec-rails'
+
+  gem 'byebug'
 end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+  gem 'factory_bot_rails'
+  gem 'byebug'
 end
 
 gem "sassc-rails"

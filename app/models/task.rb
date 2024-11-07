@@ -8,6 +8,7 @@ class Task < ApplicationRecord
     completed: 3,
     on_hold: 4,
     cancelled: 5,
-    blocked: 6
+    blocked: 6,
+    pending: 7
   }
 end
