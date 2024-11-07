@@ -1,0 +1,18 @@
+<% if task.user == current_user %>
+  <div id="<%= dom_id task %>%">
+    <tr>
+      <td> <%= link_to task.title, task %> </td>
+
+      <td> <%= task.description %> </td>
+
+      <td> <%= task.status %> </td>
+
+      <td> <%= task.priority %> </td>
+
+      <td> <%= task.due_date %> </td>
+
+      <td>
+        <%= button_to "Delete", task, method: :delete, class: "btn btn-sm btn-danger" %>
+    </tr>
+  </div>
+<% end %>
